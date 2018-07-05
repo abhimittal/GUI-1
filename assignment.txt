@@ -1,0 +1,56 @@
+# Question 1 
+
+from tkinter import *
+root=Tk()
+def close_window():
+ root.destroy()
+Label1 =Label(root,text="Hello World")
+Label1.pack()
+button = Button(text= "Exit", command = close_window)
+button.pack()
+root.mainloop()
+
+# Question 2
+
+
+from tkinter import *
+root=Tk()
+def close_window():
+ print("Not allowed to 'Exit'")
+Label1 =Label(root,text="Hello World")
+Label1.pack()
+button = Button(text= "Exit", command = close_window)
+button.pack()
+root.mainloop()
+
+# Question 3
+
+from tkinter import *
+root = Tk()
+def channge_label():
+ label.config(text="Hello Acadview")
+label=Label(root,text="Hello World")
+label.pack()
+button =Button(root,text="If clicked text will change")
+button.pack()
+root.mainloop()
+
+# Question 4
+
+from tkinter import *
+root = Tk()
+label = Label(root,text="Enter your name:",bg="white)
+label.place(x=10,y=100)
+name=StringVar()
+entry_box = Entry(root,textvairable=name,bg="white")
+entrty_box.place(x=150,y=105)
+def print_name();
+ print(str(name.get()))
+button = Button(root,text="Click to get name")
+button.place(x=75,y=150)
+root.mainloop()
+
+
+
+
+
